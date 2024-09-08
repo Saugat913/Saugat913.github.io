@@ -1,0 +1,11 @@
+.nav-bar-style-common{
+    @apply mr-4 pt-1 pb-1 pr-4 pl-4 rounded-md hover:bg-black hover:text-white cursor-pointer
+}
+
+.curve-bg-style{
+    background-image: url('/curve_1.svg'); /* Add the path to your image */
+    background-position: bottom; /* Positioning the image */
+    background-repeat: no-repeat; /* Avoid repeating the image */
+    background-size: contain; /* Ensure the image covers the whole section */
+    height: 100%; /* Make sure the section fills the entire area */
+}
