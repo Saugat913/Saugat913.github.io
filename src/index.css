@@ -5,7 +5,7 @@
 
 
 :root {
-    @apply h-full w-full
+    @apply h-full w-full overflow-y-clip
 }
 
 body {

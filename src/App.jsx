@@ -6,31 +6,32 @@ function App() {
 
 
   return (
-    <div className='flex flex-col h-full'>
+    <div className='flex flex-col h-full w-full '>
       {/* Navigation Section */}
 
-      <div className='flex p-5 items-center'>
+      <div className='flex p-5 items-center w-full'>
         <img src="/logo.svg" className='w-8 h-8 sm:w-12 sm:h-12 mr-8' />
         <div className='flex flex-grow '></div>
-        <div className='flex justify-end rounded-md border p-2 pr-4 pl-4'>
+        <div className='justify-end rounded-md border p-2 pr-4 pl-4 hidden sm:flex'>
           <span className='nav-bar-style-common'>Home</span>
           <span className='nav-bar-style-common'>Projects</span>
           <span className='nav-bar-style-common'>About</span>
           <span className='nav-bar-style-common'>Blog</span>
         </div>
-        <span className='ml-8  pt-3 pb-3 pr-5 pl-5 invisible sm:visible text-primary_color rounded-md border cursor-pointer'>Let's Chat</span>
+        <span className='ml-8  pt-3 pb-3 pr-5 pl-5  hidden sm:block text-primary_color rounded-md border cursor-pointer'>Let's Chat</span>
+        <img src="/menu_icon.svg" className='w-5 h-5 sm:hidden' />
       </div>
       {/* Home Main Section */}
-      <div className=' flex h-full  mt-3 pt-12'>
+      <div className=' flex h-full pl-3 mt-3 pt-12 w-full'>
 
-        <div className='w-20 flex flex-col-reverse pb-4 items-center'>
+        <div className='w-20 flex flex-col-reverse items-center'>
           <div className='w-[2px] h-28 bg-black'></div>
           <FiGithub size={24} className='mb-6' />
           <MdOutlineEmail size={24} className='mb-6' />
         </div>
 
-        <div className='curve-bg-style flex-grow'>
-          <div className='border m-8 p-16 pl-16 flex justify-center w-[80%] md:w-[60%] xl:w-[40%] flex-col '>
+        <div className='curve-bg-style flex items-center flex-grow bg-[url("/curve_smd.svg")] sm:bg-[url("/curve_1.svg")]' >
+          <div className='border m-8 p-8 pt-16 pb-16 pl-8 flex justify-center w-[80%] md:w-[60%] xl:w-[40%] flex-col '>
             <span className='font-Montagu-Slab  text-2xl'>
               Hi ! I Am
               <br />
@@ -47,7 +48,7 @@ function App() {
               Contact Me
             </div>
           </div>
-          {/* <div className='flex-1'></div> */}
+          <div className='flex-1'></div>
         </div>
       </div>
     </div>
@@ -55,3 +56,11 @@ function App() {
 }
 
 export default App
+
+
+
+
+
+
+
+
